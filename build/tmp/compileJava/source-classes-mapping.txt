@@ -1,0 +1,15 @@
+org/philips/swcoe/qualityGatesDemo/InvalidException.java
+ org.philips.swcoe.qualityGatesDemo.InvalidException
+org/philips/swcoe/qualityGatesDemo/DemoQualityGates.java
+ org.philips.swcoe.qualityGatesDemo.DemoQualityGates
+org/philips/swcoe/qualityGatesDemo/Maximum.java
+ org.philips.swcoe.qualityGatesDemo.Maximum
+org/philips/swcoe/qualityGatesDemo/Ingredients.java
+ org.philips.swcoe.qualityGatesDemo.Ingredients
+org/philips/swcoe/qualityGatesDemo/FirstOccurrence.java
+ org.philips.swcoe.qualityGatesDemo.FirstOccurrence
+org/philips/swcoe/qualityGatesDemo/MaximumWin.java
+ org.philips.swcoe.qualityGatesDemo.MaximumWin
+org/philips/swcoe/qualityGatesDemo/Narry.java
+ org.philips.swcoe.qualityGatesDemo.Narry
+ org.philips.swcoe.qualityGatesDemo.Node

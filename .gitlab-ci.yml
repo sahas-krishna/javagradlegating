@@ -1,0 +1,11 @@
+
+image: "openjdk:8"
+
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+
+before_script:
+  - chmod +x gradlew
+
+build:
+  script: ./gradlew clean test build check jacocoTestReport jacocoTestCoverageVerification pitest
