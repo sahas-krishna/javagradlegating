@@ -1,0 +1,12 @@
+org/philips/swcoe/qualityGatesDemo/NArrayTest.java
+ org.philips.swcoe.qualityGatesDemo.NArrayTest
+org/philips/swcoe/qualityGatesDemo/IngredientsTest.java
+ org.philips.swcoe.qualityGatesDemo.IngredientsTest
+org/philips/swcoe/qualityGatesDemo/DemoQualityGatesTest.java
+ org.philips.swcoe.qualityGatesDemo.DemoQualityGatesTest
+org/philips/swcoe/qualityGatesDemo/MaximumTest.java
+ org.philips.swcoe.qualityGatesDemo.MaximumTest
+org/philips/swcoe/qualityGatesDemo/OccurrenceTest.java
+ org.philips.swcoe.qualityGatesDemo.OccurrenceTest
+org/philips/swcoe/qualityGatesDemo/MaximumWinTest.java
+ org.philips.swcoe.qualityGatesDemo.MaximumWinTest
