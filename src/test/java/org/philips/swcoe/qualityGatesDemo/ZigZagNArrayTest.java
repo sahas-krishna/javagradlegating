@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 import java.util.*;
-public class NArrayTest {
+public class ZigZagNArrayTest {
 
 	@Test
 	public void test() {
@@ -33,7 +33,7 @@ public class NArrayTest {
 	n6.children.add(n11);
 	n6.children.add(n12);
 	n8.children.add(n13);
-	String ss=Narry.levelOrder(n1);
+	String ss=ZigZagNArray.levelOrder(n1);
 	assertEquals("1-3-2-4-5-6-7-8-13-12-11-10-9-",ss);
 	}
 

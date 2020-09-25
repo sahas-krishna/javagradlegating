@@ -11,7 +11,7 @@ class Node
 	}
 	
 }
-public class Narry {
+public class ZigZagNArray {
 	public static String levelOrder(Node n1)
 	{
 		String output="";
@@ -22,14 +22,14 @@ public class Narry {
 		q1.offer(n1);
 		while(!q1.isEmpty()|| !q2.isEmpty())
 		{
-			sb.append(emy(q1,q2));
-			Stack<Node>st=emy1(q1,q2);
-			sb.append(elemy(st));
+			sb.append(getAdded1(q1,q2));
+			Stack<Node>st=getRemoved(q1,q2);
+			sb.append(getAdded(st));
 		}
 		output=sb.toString();
 		return output;
 	}
-	public static String elemy(Stack<Node>st)
+	public static String getAdded(Stack<Node>st)
 	{
 		String output="";
 		StringBuffer sb=new StringBuffer();
@@ -38,7 +38,7 @@ public class Narry {
 		output=sb.toString();
 		return output;
 	}
-	public static String emy(Queue<Node>q1,Queue<Node>q2)
+	public static String getAdded1(Queue<Node>q1,Queue<Node>q2)
 	{
 		String output="";
 		StringBuffer sb=new StringBuffer();
@@ -53,9 +53,9 @@ public class Narry {
 		return output;
 		
 	}
-	public static Stack<Node> emy1(Queue<Node>q1,Queue<Node>q2)
+	public static Stack<Node> getRemoved(Queue<Node>q1,Queue<Node>q2)
 	{
-		Stack<Node>st=new Stack<Node>();
+		Stack<Node>st=new Stack<>();
 		while(!q2.isEmpty())
 		{
 			Node nn=q2.poll();

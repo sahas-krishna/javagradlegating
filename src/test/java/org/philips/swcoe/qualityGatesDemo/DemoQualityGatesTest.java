@@ -14,5 +14,4 @@ public class DemoQualityGatesTest {
         Assert.assertNotNull(app.getName());
         Assert.assertEquals(expectedName, app.getName());
     }
-
 }

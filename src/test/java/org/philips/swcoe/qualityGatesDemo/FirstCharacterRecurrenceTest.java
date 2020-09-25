@@ -4,45 +4,31 @@ import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 import org.junit.Rule;
 //Class used for testing the maximum element
-public class OccurrenceTest { 
+public class FirstCharacterRecurrenceTest { 
 	//Empty constructor to attain standards	
 	// Test case to return maximum occurred element
 	@Test
 	public void test1() throws Exception {
-		char res=FirstOccurrence.occurrence("sahas");
+		char res=FirstCharacterRecurrence.getRepeatedCharacter("sahas");
 		assertEquals('a',res);
 	}
 	@Test
 	public void test2() throws Exception {
-		char res=FirstOccurrence.occurrence("eaahh");
+		char res=FirstCharacterRecurrence.getRepeatedCharacter("eaahh");
 		assertEquals('a',res);
 	}
 	@Test
-	public void test3() 
+	public void test3() throws Exception
 	{
-		try
-		{
-			   FirstOccurrence.occurrence("ABC");
-			   fail();
-		}
-		catch(Exception e)
-		{
-			assertThat(e.getMessage(),is("Not a single element got occurred"));
-		}	
+		char res=FirstCharacterRecurrence.getRepeatedCharacter("abc");
+		assertEquals(' ',res);	
 	}
 	
 	@Test
 	public void test4()
 	{
-		try
-		{
-			   FirstOccurrence.occurrence(" ");
-			   fail();
-		}
-		catch(Exception e)
-		{
-			assertThat(e.getMessage(),is("Not a single element got occurred"));
-		}
+		char res=FirstCharacterRecurrence.getRepeatedCharacter(" ");
+		assertEquals(' ',res);
 		
 	}
 }

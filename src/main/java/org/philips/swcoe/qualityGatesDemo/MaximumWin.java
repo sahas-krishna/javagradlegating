@@ -7,14 +7,14 @@ public class MaximumWin {
 	}
 	public static int winning(int[] a1,int... a2)
 	{
-		ArrayList<Integer>al1=new ArrayList<>();
+		ArrayList<Integer>mine=new ArrayList<>();
 		for(Integer ii:a1)	
-			al1.add(ii);
-		ArrayList<Integer>al2=new ArrayList<>();
+			mine.add(ii);
+		ArrayList<Integer>opponent=new ArrayList<>();
 		for(Integer ii:a2)
-		al2.add(ii);
-		int c=number(al1,al2);
-		return c;
+		opponent.add(ii);
+		int wins=number(mine,opponent);
+		return wins;
 	}
 	public static int number(List<Integer>al1,List<Integer>al2)
 	{

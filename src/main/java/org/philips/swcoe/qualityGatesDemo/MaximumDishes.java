@@ -1,19 +1,19 @@
 package org.philips.swcoe.qualityGatesDemo;
 //A class to find the maximum occurred element
-public final class Ingredients{
+public final class MaximumDishes{
 	//Constructor
-	private Ingredients() 
+	private MaximumDishes() 
 	{}
 	 //To find the maximum occurrence
-	public  static int findy(final int n,final Integer[] req,final int... provided)throws InvalidException
+	public  static int getMaximumDishes(final int n,final Integer[] req,final int... provided)throws InvalidException
 	{		
 		
-		int a=elem(n,req,provided);
-		if(a>0 && a!=Integer.MAX_VALUE)
-			return a;
+		int output=getCount(n,req,provided);
+		if(output>0 && output!=Integer.MAX_VALUE)
+			return output;
 		throw new InvalidException("No element occurred more than the half of the length of the array");	
 	}
-	public static int elem(final int n,Integer[] req,final int... provided)
+	public static int getCount(final int n,Integer[] req,final int... provided)
 	{	
 		int min=Integer.MAX_VALUE;
 		for(int i=0;i<n;i++)

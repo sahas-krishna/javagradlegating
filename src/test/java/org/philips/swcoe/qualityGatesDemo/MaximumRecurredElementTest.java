@@ -4,25 +4,25 @@ import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 import org.junit.Rule;
 //Class used for testing the maximum element
-public class IngredientsTest { 
+public class MaximumRecurredElementTest { 
 	//Empty constructor to attain standards	
 	// Test case to return maximum occurred element
 	@Test
 	public void test1()throws Exception {
-		int res=Ingredients.findy(4,new Integer[] {2,5,6,3},new int[] {20,40,90,50});
-		assertEquals(8,res);
+		int result=MaximumRecurredElement.getRecurredNumber(new int[] {1,2,3,2,2,2,2,2});
+		assertEquals(2,result);
 	}
 	@Test
 	public void test2() throws Exception{
-		int res=Ingredients.findy(3,new Integer[] {1,4,6},new int[] {5,24,18});
-		assertEquals(3,res);
+		int result=MaximumRecurredElement.getRecurredNumber(new int[] {1,1,1,1,2,2,2,3,3});
+		assertEquals(1,result);
 	}
 	@Test
 	public void test3() 
 	{
 		try
 		{
-			   Ingredients.findy(3,new Integer[] {1,4,5},new int[] {3,2,8});
+			MaximumRecurredElement.getRecurredNumber(new int[] {1,2,3,4,5,6});
 			   fail();
 		}
 		catch(Exception e)
@@ -35,7 +35,7 @@ public class IngredientsTest {
 	{
 		try
 		{
-			   Ingredients.findy(0,new Integer[] {},new int[] {});
+			MaximumRecurredElement.getRecurredNumber(new int[] {});
 			   fail();
 		}
 		catch(Exception e)
